@@ -8,16 +8,21 @@
 body{
   font-family: "Open Sans";
   height: 100vh;
-  background: rgb(60,60,242);
-  background: linear-gradient(90deg, rgba(60,60,242,1) 0%, rgba(98,245,230,1) 52%, rgba(60,60,242,1) 100%);
+  background-image: linear-gradient(to right top, #068c35, #37a434, #5cbc2f, #81d426, #a8eb12);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.heading{
+  color: #fff;
+  margin: 1rem;
 }
 
 .wrapper{
-  width: 600px;
+  max-width: 600px;
   padding: 3em;
   border-radius: 1em;
   box-shadow: 0 4em 5em rgba(27,8,53,0.2);
@@ -36,7 +41,7 @@ body{
 
 #spin-btn{
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50px;
@@ -60,4 +65,14 @@ body{
   top: 47%;
   right: 30%;
   font-size: 3rem;
+}
+
+
+@media(max-width: 768px){
+  .arrow{
+    top: 24%;
+    left: 50%;
+    right: 50%;
+    transform: rotate(270deg);
+  }
 }
